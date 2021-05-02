@@ -82,6 +82,52 @@ main {
   background-color: #a7b8d4;
 }
 
+.toggle-temp {
+  margin-top: 20px;
+}
+
+.checkbox-toggle {
+  display: none;
+}
+
+.checkbox-toggle:checked ~ .check {
+  /* background-color: red; */
+}
+
+.check {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 54px;
+  height: 28px;
+  background-color: #737e8f;
+  cursor: pointer;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.check-text {
+  position: absolute;
+  left: 1px;
+  background-color: transparent;
+}
+
+.check:before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  background-color: transparent;
+  background-color: rgb(255, 255, 255);
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  transition: 0.5s;
+}
+
+.checkbox-toggle:checked ~ .check:before {
+  transform: translateX(120%);
+}
+
 #template-weather-card {
   margin: 2rem;
   padding: .8rem;

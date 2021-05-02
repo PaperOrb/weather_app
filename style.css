@@ -51,28 +51,35 @@ main {
 }
 
 .city-search {
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
 .city-search__input {
   font-size: 20px;
-  width: 80%;
+  width: 85%;
+  padding: 4px;
+  border: none;
 }
 
 .city-search__btn {
+  position: absolute;
+  right: 0px;
   font-size: 18px;
   padding: 5px 12px;
-  margin-top: 20px;
-  border-radius: 500px;
-  border: 1px solid white;
+  height: 100%;
+  width: 15%;
+  /* margin-top: 20px; */
+  background-color: #6a778b;
+  border: none;
+  border-left: 1px solid rgb(0, 0, 0);
 }
 
 .city-search__btn:hover {
   cursor: pointer;
-  color: white
+  background-color: #a7b8d4;
 }
 
 #template-weather-card {

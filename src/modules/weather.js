@@ -48,14 +48,12 @@ const weather = (function () {
 
   function convertTemp(kelvin) {
     let scale = getTempScale();
-    debugger;
     return scale(kelvin);
   }
 
   function toggleTempScale() {
     let scale = getTempScale() === convertToFahrenheit ? convertToCelsius : convertToFahrenheit;
     setTempScale(scale);
-    debugger;
   }
 
   function convertMeterToMile(meters) {

@@ -108,8 +108,9 @@ main {
 
 .check-text {
   position: absolute;
-  left: 1px;
+  left: 2px;
   background-color: transparent;
+  user-select: none;
 }
 
 .check:before {

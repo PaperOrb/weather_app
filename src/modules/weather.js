@@ -20,6 +20,7 @@ const weather = (function () {
       return response.json();
     } catch (err) {
       console.log("failed to fetch weather");
+      return null;
     }
   }
 
@@ -29,7 +30,12 @@ const weather = (function () {
 
   function createCard(data, template) {
     let clone = template.cloneNode(true);
+    let cityNotFound = "No city found with that name :(";
     clone.setAttribute("style", "display: flex;");
+    if (data === null) {
+      clone.querySelector(".city").textContent = cityNotFound;
+      return clone;
+    }
     clone.querySelector(".city").textContent = data.name;
     clone.querySelector(".temperature").textContent = `${convertTemp(data.main.temp)}`;
     clone.querySelector(".weather-art").setAttribute("src", `images/${data.weather[0].icon}.png`);

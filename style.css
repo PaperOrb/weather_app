@@ -73,7 +73,7 @@ main {
   height: 100%;
   width: 15%;
   /* margin-top: 20px; */
-  background-color: #6a778b;
+  background-color: var(--primary-color);
   border: none;
   border-left: 1px solid rgb(0, 0, 0);
 }
@@ -101,7 +101,7 @@ main {
   align-items: center;
   width: 54px;
   height: 28px;
-  background-color: #737e8f;
+  background-color: var(--primary-color);
   cursor: pointer;
   border-radius: 100px;
   overflow: hidden;

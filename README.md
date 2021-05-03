@@ -1,15 +1,5 @@
-# 🚀 Welcome to your new awesome project!
+# Weather! [Live Preview](https://paperorb.github.io/weather_app/)
 
-This project has been created using **webpack-cli**, you can now run
+Displays the weather for a given city using the [OpenWeatherMap API](https://openweathermap.org/api). Forecast is grabbed asynchronously via async/await.
 
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
+The button icons are from font-awesome, and the weather icons are from the [Simplistic Weather Icon](https://www.dovora.com/resources/weather-icons/) pack.
